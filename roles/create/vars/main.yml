@@ -1,2 +1,8 @@
 ---
 # vars file for create
+instance_type: t2.micro
+security_group: giropops
+image: ami-077d5d3682940b34a
+keypair: ansible_aws_key
+region: sa-east-1
+count: 1

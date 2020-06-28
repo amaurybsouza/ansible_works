@@ -1,0 +1,7 @@
+---
+- hosts: cloud
+  tasks:
+    - name: Message
+      debug:
+        msg: Amaury B Souza
+...

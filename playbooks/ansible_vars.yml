@@ -1,0 +1,10 @@
+---
+- hosts: cloud
+  become: true
+  vars:
+    package: htop
+  tasks:
+  - name: Intall package
+    apt:
+      name={{ package }} state=present
+...

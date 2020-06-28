@@ -1,0 +1,12 @@
+---
+- hosts: cloud
+  become: true
+  vars:
+    packages: [ 'vim', 'git', 'curl' ]
+  tasks:
+    - name: Install packages
+      apt: 
+        name: "{ item }"
+        state: present
+        with_items: "{ packages }"
+...
